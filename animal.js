@@ -38,12 +38,18 @@ class animal {
                 return new perro(nombre, edad)
             case "gato":
                 return new gato(nombre, edad)
-            case "gato":
+            case "pajaro":
                 return new pajaro(nombre, edad)
             default:
                 return "el animal esta sin control"
         }
     }
 
-let c = new crearAnimal("perro", "max", 7);
+let c = crearAnimal("perro", "max", 7)
 c.hacersonido()
+
+let a = crearAnimal("gato", "luz", 9)
+a.hacersonido()
+
+let pj = crearAnimal("pajaro", "julio", 6)
+pj.hacersonido()
